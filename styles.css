@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    position: relative;
+    max-width: 600px;
+    box-shadow: 0 0 10px 2px rgb(37, 35, 35);
+    border-radius: 3px;
+    margin: 1em auto;
+    padding: 2em;
+}
+
+.folder{
+    color: rgb(237,188,11);
+}
+
+.non-folder{
+    color: rgb(176,176,176);
+}
+
+.main-container{
+    list-style: none;
+    cursor: pointer;
+}
+
+.file-container{
+    display: flex;
+    align-items: center;
+    user-select: none;
+    position: relative;
+}
+
+.file-container:hover{
+    background-color: rgb(224,244,255);
+}
+
+#root:focus,
+   .main-dom-container:focus{
+    outline: none;
+}
+
+.main-container:focus{
+    background-color: rgb(153,205,255);
+    outline: none;
+}
+
+.file-name:focus{
+    outline: '';
+}
+
+.material-icons{
+    display: inline-block;
+}
+
+.hidden{
+    display: none;
+}
+
+.context-nav {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    background: #fff;
+    box-shadow: 2px 2px 2px 0px rgba(143, 144, 145, 1);
+    padding: 0px;
+    border: 1px solid #C6C6C6;
+  }
+
+.context-list{
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+}
+
+.context-option{
+    display: block;
+}
+
+.disabled{
+    color: grey;
+    pointer-events: none;
+}
+
+.context-option:hover{
+    background-color: rgb(224,244,255);
+    cursor: pointer;
+    user-select: none;
+}
+
